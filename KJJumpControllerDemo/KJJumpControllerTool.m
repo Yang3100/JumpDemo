@@ -17,7 +17,7 @@
     Class newClass = objc_getClass(className);
     if (newClass == nil) {
         // 创建一个类
-        Class superClass = [NSObject class];
+        Class superClass = [UIViewController class];
         newClass = objc_allocateClassPair(superClass, className, 0);
         // 注册你创建的这个类
         objc_registerClassPair(newClass);
